@@ -1,12 +1,8 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
 html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background: #674baf;
-  /* background-attachment: fixed; */
   background-size: 88% 100%;
   background-repeat: no-repeat;
   background-image:url(images/bg-desktop.svg);
@@ -15,15 +11,62 @@ html, body {
 .container {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
-  grid-template-rows: 15vh 75vh 10vh;
+  grid-template-rows: 15vh 74vh 11vh;
   grid-template-areas: "header header"
                       "main aside"
                         "footer footer"
 }
 
 .aside {
-  margin-top: 67px;
+  margin-top: 90px;
 }
+
+.botao {
+  width: 160px;
+  height: 40px;
+  margin-top: 5px;
+  background: white;
+  color: #674baf;
+  border: 0;
+  font-size: 14px;
+  border-radius: 20px;
+  box-shadow: 2px 4px 8px #0000004d;
+}
+
+.botao:active {
+  box-shadow: 0 0 0 0 #0000004d;
+}
+
+.built {
+  font-size: 11px;
+  margin-left: 480px;
+  font-size: 12px;
+}
+
+.built a { 
+  color:#ffffff9d;
+}
+
+.icone {
+  display: flex;
+  margin-right: 130px;
+  margin-bottom: 40px;
+} 
+
+.icones {
+  background-color: transparent;
+  color: white;
+  margin-left: 15px;
+  border-width: 1px;
+  display: flex;
+  border-style: solid;
+  border-color: white;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+} 
 
 p#titulo {
   font-family: 'Poppins', sans-serif;
@@ -33,18 +76,9 @@ p#titulo {
 
 p#corpo {
   font-family: 'Open Sans', sans-serif;
+  margin-top: -15px;
   font-size: 15px;
   color: white;
-}
-
-input#botao {
-  width: 160px;
-  height: 40px;
-  background-color: white; 
-  border-color: white;
-  font-size: 14px;
-  border-radius: 20px;
-  box-shadow: 5px 3px 12px rgba(0, 0, 0, 0.493);
 }
 
 img#imagemHeader {
@@ -74,4 +108,7 @@ aside {
 
 footer {
   grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
