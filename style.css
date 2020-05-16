@@ -1,0 +1,45 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: hsl(257, 40%, 49%);
+  /* background-attachment: fixed; */
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  background-image:url(images/bg-desktop.svg);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  grid-template-rows: 15vh 75vh 10vh;
+  grid-template-areas: "header header"
+                      "main aside"
+                        "footer footer"
+}
+
+img#imagemTeste {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 190px;
+  /* background: blue; */
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
